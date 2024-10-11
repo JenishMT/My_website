@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  transform: matrix(0.965926, -0.258819, 0.258819, 0.965926, 0, 0);
+}
+
+.page {
+  transition: transform 0.3s ease;
+}
+
+:root {
+  --primary-color: rgb(255 255 255);
+  --secondary-color: rgb(107 114 128);
+  --thirdinary-color: rgb(226 232 240);
+  --fourtinary-color: rgb(226 232 240);
+  --fifthinary-color: rgb(229 231 235);
+  --sixth-color: rgb(63 63 70);
+}
+.dark-theme {
+  --primary-color: rgb(24 24 27);
+  --secondary-color: #fff;
+  --thirdinary-color: rgb(51 65 85);
+  --fourtinary-color: rgb(38 38 38);
+  --fifthinary-color: rgb(113 113 122);
+  --sixth-color: #fff;
+}
+.hero {
+  background-color: var(--primary-color);
+  border-color: var(--fifthinary-color);
+}
+.txt {
+  color: var(--secondary-color);
+}
+
+.icon {
+  background-color: var(--thirdinary-color);
+}
+
+.icon1 {
+  color: var(--secondary-color);
+}
+
+.box2 {
+  background-color: var(--fourtinary-color);
+}
+
+.heading {
+  color: var(--fifthinary-color);
+}
+
+.heading1 {
+  color: var(--secondary-color);
+}
+
+.brd {
+  border-color: var(--secondary-color);
+}
+.icon2 {
+  color: var(--sixth-color);
+}
+
+.img-gallary {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.div-gallary {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.img-gallary img:hover {
+  transform: scale(0.8) rotate(-10deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 137, 0.2);
+}
+
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
